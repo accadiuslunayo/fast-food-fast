@@ -67,15 +67,6 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
-.text-block-sign-in {
-  position: absolute;
-  top: 3px;
-  left: 750px;
-  background-color: white;
-  color: #ca6;
-  padding-left: 0px;
-  padding-right: 0px;
-}
 /*Styling for navigation bar*/
 .navbar{
   overflow: hidden;
@@ -241,40 +232,20 @@ body {
   right : -7px
 }
 
-.description{
-  padding: 0;
-  font-size: 13px;
-}
-
 #wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 498px) {
 .navbar a:not(:first-child) {display: none;}
 .navbar a.item {
   float: right;
   display: block;
 }
+body {display:none;}
 }
 
-@media screen and (max-width: 1050px) {
-  .description{
-    font-size: 10px;
-  }
-
-}
-@media screen and (max-width: 802px) {
-  .description{
-    font-size: 8px;
-  }
-  .item span{
-    height: 24px;
-    width: 34px;
-    font-size: 11px;
-  }
-}
 /*Styling for sign in and sign up pages*/
 .centered {
   position: fixed;
@@ -342,9 +313,7 @@ span.psw {
       display: block;
       float: none;
   }
-  .cancelbtn {
-      width: 150%;
-  }
+  
 }
 /*Styling for the footer*/
 .footer {
