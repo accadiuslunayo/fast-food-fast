@@ -4,6 +4,22 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.411764705882353px;
+	}
+}
+
 /*styling for layout*/
 body {
 	background-color: #ffff;
@@ -237,13 +253,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 498px) {
-.navbar a:not(:first-child) {display: none;}
-.navbar a.item {
+
+@media all and (max-width: 320px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.item {
   float: right;
   display: block;
 }
-body {display:none;}
+
 }
 
 /*Styling for sign in and sign up pages*/
@@ -308,7 +325,7 @@ span.psw {
   padding-top: 16px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   span.psw {
       display: block;
       float: none;
